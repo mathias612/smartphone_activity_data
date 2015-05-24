@@ -156,8 +156,8 @@ mergeData_Mean <- sapply(mergeData, mean, na.rm=TRUE)
 mergeData_Std_Dev <- sapply(mergeData, sd, na.rm=TRUE)
 
 Create tidy data with average for each activity and each subject
-The tidy data table is generated with average of each measurement per subject and per activity (180 total results are generated because of combination of 30 subjects and 6 activities each). The new file is saved as tidy.csv.
+The tidy data table is generated with average of each measurement per subject and per activity (180 total results are generated because of combination of 30 subjects and 6 activities each). The new file is saved as tidy.txt.
 
 dataTable <- data.table(mergeData)
 tidy <- dataTable[,lapply(.SD, mean), by="Subject,Activity"]
-write.table(tidy, file="tidy.csv", sep=",", row.names = FALSE)
+write.table(tidy, file="tidy.txt", sep=",", row.names = FALSE)
