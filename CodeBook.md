@@ -1,7 +1,11 @@
 Overview:
+
 This Github repository hosts the R code related to the project for the Johns Hopkins Data Specialization “Getting and Cleaning Data” course.  This project covers best practices for how data scientists clean data in preparation for further analysis to be conducted.  The initial Data Description and File Description sections of this Code Book contain text that has been taken directly from the UCI Machine Learning Repository on Human Activity Recognition Using Smartphone Data Set website (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) or from files downloaded from this site.
 
+
+
 Data Description:
+
 Per the UCI Machine Learning Repository on Human Activity Recognition Using Smartphone Data Set:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. 
@@ -19,7 +23,10 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
+
+
 File Description: 
+
 Per the UCI Machine Learning Repository on Human Activity Recognition Using Smartphone Data Set “README.txt” file (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones): 
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features.
@@ -35,7 +42,10 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
+
+
 Variable Description:
+
 Per the UCI Machine Learning Repository on Human Activity Recognition Using Smartphone Data Set features_info.txt file:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -95,6 +105,7 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
+
 
 
 Data Transformation:
