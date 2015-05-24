@@ -50,4 +50,4 @@ mergeData_Std_Dev <- sapply(mergeData, sd, na.rm=TRUE)
 # Create tidy data with average for each activity and each subject
 dataTable <- data.table(mergeData)
 tidy <- dataTable[,lapply(.SD, mean), by="Subject,Activity"]
-write.table(tidy, file="tidy.csv", sep=",", row.names = FALSE)
+write.table(tidy, file="tidy.txt", sep=",", row.names = FALSE)
